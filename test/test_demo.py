@@ -1,21 +1,18 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import pytest
 import time
 from pages.home_page import HomePage
 from pages.product_page import ProductPage
 
-#
-# def test_open_s6(browser):
-#     homepage = HomePage(browser)
-#     homepage.open()
-#     homepage.click_galaxy_s6()
-#     productpage = ProductPage(browser)
-#     productpage.check_title('Samsung galaxy s6')
-#
-# def test_two_monitors(browser):
-#     homepage = HomePage(browser)
-#     homepage.open()
-#     homepage.click_monitor_link()
-#     time.sleep(2) #!--
-#     homepage.check_goods_count(2)
+
+def test_open_s6(browser):
+    homepage = HomePage(browser)
+    homepage.open()
+    homepage.click_galaxy_s6()
+    productpage = ProductPage(browser)
+    productpage.check_title('Samsung galaxy s6')
+
+def test_two_monitors(browser):
+    homepage = HomePage(browser)
+    homepage.open()
+    homepage.click_monitor_link()
+    time.sleep(2) #!--
+    homepage.check_goods_count(2)

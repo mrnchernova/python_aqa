@@ -1,9 +1,6 @@
 from selenium.webdriver.common.by import By
-import time
 from pages.home_page import HomePage
 from pages.login_form import LoginForm
-from pages.product_page import ProductPage
-from selenium.webdriver.common.keys import Keys
 
 def test_login(browser):
     homepage = HomePage(browser)
