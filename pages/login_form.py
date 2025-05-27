@@ -1,5 +1,5 @@
 import time
-from Entity.user import User
+from entity.user import User
 from selenium.webdriver.common.by import By
 
 
