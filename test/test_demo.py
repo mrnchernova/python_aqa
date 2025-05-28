@@ -1,6 +1,6 @@
 import time
-from pages.home_page import HomePage
-from pages.product_page import ProductPage
+from pageObject.pages.home_page import HomePage
+from pageObject.pages.product_page import ProductPage
 
 
 def test_open_s6(browser):
